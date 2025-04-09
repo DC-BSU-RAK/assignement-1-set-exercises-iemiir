@@ -1,0 +1,127 @@
+/* Shared CSS for all pages */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #000;
+    background-color: #aaaaaa;
+}
+
+header {
+    background-color: #1a1a2e;
+    color: #fff;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+nav {
+    background-color: #16213e;
+    position: sticky;
+    top: 0;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-item {
+    padding: 1rem;
+}
+
+.nav-item a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5rem;
+}
+
+.nav-item a:hover {
+    color: #e94560;
+}
+
+main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #dddddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section {
+    margin-bottom: 2rem;
+    padding-top: 1rem;
+}
+
+.section-title {
+    color: #000;
+    border-bottom: 2px solid #e94560;
+    padding-bottom: 0.5rem;
+}
+
+.cast-member {
+    margin-bottom: 1rem;
+}
+
+.actor-name {
+    font-weight: bold;
+    color: #000;
+}
+
+.character-name {
+    font-style: italic;
+    color: #000;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #e94560;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    margin-top: 1rem;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #16213e;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #1a1a2e;
+    color: #fff;
+}
+
+blockquote {
+    border-left: 3px solid #e94560;
+    padding-left: 1rem;
+    margin-left: 0;
+    font-style: italic;
+}
+
+cite {
+    display: block;
+    text-align: right;
+    margin-top: 0.5rem;
+    font-style: normal;
+}
+
+.season-info {
+    background-color: #f0f0f0;
+    padding: 1rem;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+}
