@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Gallery</title>
+    <style>
+        /* Container to center the images and provide some spacing */
+        .image-container {
+            text-align: center;
+            margin: 20px;
+        }
+
+        /* CSS filter to apply to all images */
+        img {
+            width: auto;
+            height: auto;
+            max-width: 300px;
+            max-height: 300px;
+            filter: grayscale(50%) contrast(120%);
+            transition: filter 0.3s ease;
+        }
+
+        img:hover {
+            filter: grayscale(0%) contrast(100%);
+        }
+
+        /* Styling for image captions and copyright info */
+        .caption {
+            font-size: 14px;
+            color: #555;
+            margin-top: 10px;
+        }
+
+        .copyright-info {
+            font-size: 12px;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="image-container">
+        <h2>Car Photography</h2>
+        <img src="ferrari.jpg" alt="A red Ferrari SF90 parked on a scenic road" title="Ferrari SF90 - The Ultimate Supercar">
+        <p class="caption">The Ferrari SF90, a powerful hybrid supercar with impressive performance.</p>
+        <p class="copyright-info">Copyright: Free for commercial use, no attribution required. Image by <a href="https://www.example.com">John Doe</a> from Unsplash.</p>
+    </div>
+
+    <div class="image-container">
+        <img src="R32.webp" alt="A classic Nissan R32 Skyline GT-R parked at sunset" title="Nissan R32 Skyline GT-R">
+        <p class="caption">The iconic Nissan R32 Skyline GT-R, a legend in the automotive world.</p>
+        <p class="copyright-info">Copyright: Licensed under Creative Commons (CC0) Public Domain.</p>
+    </div>
+
+    <div class="image-container">
+        <img src="gt3.webp" alt="A sleek Porsche 911 GT3 RS speeding on a track" title="Porsche 911 GT3 RS - Precision Engineering">
+        <p class="caption">The Porsche 911 GT3 RS, designed for track performance and driving precision.</p>
+        <p class="copyright-info">Copyright: Licensed for commercial use under Creative Commons by <a href="https://www.example.com">Jane Smith</a> from Pixabay.</p>
+    </div>
+
+</body>
+</html>

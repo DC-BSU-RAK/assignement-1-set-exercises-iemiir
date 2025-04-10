@@ -1,0 +1,46 @@
+/* Styling for div#C with multiple nested rounded borders */
+#C {
+    position: relative;
+    border: none;
+    width: 200px;
+    height: 200px;
+    border-radius: 35px;
+    box-shadow: 0 0 0 5px orange;
+    z-index: 1;
+    background-color: white;
+  }
+  
+  /* Blue border */
+  #C::before {
+    content: "";
+    position: absolute;
+    top: -12px;
+    left: -12px;
+    right: -12px;
+    bottom: -12px;
+    border-radius: 40px;
+    background-color: blue;
+    z-index: -1;
+  }
+  
+  /* Red border */
+  #C::after {
+    content: "";
+    position: absolute;
+    top: -24px;
+    left: -24px;
+    right: -24px;
+    bottom: -24px;
+    border-radius: 50px;
+    background-color: red;
+    z-index: -2;
+  }
+  
+  /* Green outer border */
+  #C {
+    --outer-color: green;
+  }
+  
+  #C::after {
+    box-shadow: 0 0 0 12px var(--outer-color);
+  }
