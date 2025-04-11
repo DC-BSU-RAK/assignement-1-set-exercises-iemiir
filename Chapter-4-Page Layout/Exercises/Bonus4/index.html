@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Development Study Planner</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header section with logo and title -->
+    <header>
+        <div class="logo">
+            <h1>WebDev Study Planner</h1>
+        </div>
+        <!-- Main navigation -->
+        <nav>
+            <ul>
+                <li><a href="#" class="active">Dashboard</a></li>
+                <li><a href="#">My Progress</a></li>
+                <li><a href="#">Resources</a></li>
+                <li><a href="#">Calendar</a></li>
+            </ul>
+        </nav>
+        <!-- User profile section -->
+        <div class="user-profile">
+            <span>Mirr works</span>
+        </div>
+    </header>
+
+    <!-- Main content area -->
+    <main>
+        <!-- Sidebar with navigation categories -->
+        <aside class="sidebar">
+            <h2>Module Topics</h2>
+            <ul>
+                <li><a href="#" class="active">HTML Basics</a></li>
+                <li><a href="#">CSS Fundamentals</a></li>
+                <li><a href="#">JavaScript Essentials</a></li>
+                <li><a href="#">Responsive Design</a></li>
+                <li><a href="#">Web APIs</a></li>
+                <li><a href="#">Frontend Frameworks</a></li>
+                <li><a href="#">Backend Basics</a></li>
+            </ul>
+            
+            <!-- Progress tracker -->
+            <div class="progress-tracker">
+                <h3>Your Progress</h3>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 65%;"></div>
+                </div>
+                <p>65% Complete</p>
+            </div>
+        </aside>
+
+        <!-- Central content area -->
+        <section class="study-content">
+            <div class="section-header">
+                <h2>HTML Basics</h2>
+                <p>Master the foundation of web development with HTML5</p>
+            </div>
+
+            <!-- Study items - these are the five demo items -->
+            <div class="study-items">
+                <!-- Item 1 -->
+                <article class="study-item completed">
+                    <div class="item-header">
+                        <h3>Introduction to HTML</h3>
+                        <span class="tag">Week 1</span>
+                    </div>
+                    <p>Learn the basic structure of HTML documents, tags, elements, and attributes.</p>
+                    <div class="item-footer">
+                        <span class="completion-status">Completed</span>
+                        <button class="btn secondary">Review</button>
+                    </div>
+                </article>
+
+                <!-- Item 2 -->
+                <article class="study-item completed">
+                    <div class="item-header">
+                        <h3>HTML Semantic Elements</h3>
+                        <span class="tag">Week 2</span>
+                    </div>
+                    <p>Understand the importance of semantic markup and how to use HTML5 semantic elements.</p>
+                    <div class="item-footer">
+                        <span class="completion-status">Completed</span>
+                        <button class="btn secondary">Review</button>
+                    </div>
+                </article>
+
+                <!-- Item 3 -->
+                <article class="study-item in-progress">
+                    <div class="item-header">
+                        <h3>HTML Forms & Input</h3>
+                        <span class="tag">Week 3</span>
+                    </div>
+                    <p>Create interactive forms using various input types, form validation, and submission.</p>
+                    <div class="item-footer">
+                        <span class="completion-status">In Progress</span>
+                        <button class="btn primary">Continue</button>
+                    </div>
+                </article>
+
+                <!-- Item 4 -->
+                <article class="study-item upcoming">
+                    <div class="item-header">
+                        <h3>HTML Tables & Data</h3>
+                        <span class="tag">Week 4</span>
+                    </div>
+                    <p>Work with tables to display and organize tabular data effectively.</p>
+                    <div class="item-footer">
+                        <span class="completion-status">Upcoming</span>
+                        <button class="btn outline">Start</button>
+                    </div>
+                </article>
+
+                <!-- Item 5 -->
+                <article class="study-item upcoming">
+                    <div class="item-header">
+                        <h3>HTML Media & Embedding</h3>
+                        <span class="tag">Week 5</span>
+                    </div>
+                    <p>Learn to embed images, audio, video, and other media content in your web pages.</p>
+                    <div class="item-footer">
+                        <span class="completion-status">Upcoming</span>
+                        <button class="btn outline">Start</button>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Right sidebar for recommended resources -->
+        <aside class="resources-sidebar">
+            <h2>Recommended Resources</h2>
+            
+            <div class="resource-item">
+                <div>
+                    <h4>HTML5 Structure Best Practices</h4>
+                    <p>MDN Web Docs</p>
+                    <a href="#" class="btn text">View Resource</a>
+                </div>
+            </div>
+            
+            <div class="resource-item">
+                <div>
+                    <h4>Semantic HTML Tutorial</h4>
+                    <p>W3Schools</p>
+                    <a href="#" class="btn text">View Resource</a>
+                </div>
+            </div>
+            
+            <div class="resource-item">
+                <div>
+                    <h4>Form Validation Techniques</h4>
+                    <p>CSS-Tricks</p>
+                    <a href="#" class="btn text">View Resource</a>
+                </div>
+            </div>
+            
+            <!-- Upcoming deadlines section -->
+            <div class="deadlines">
+                <h3>Upcoming Deadlines</h3>
+                <ul>
+                    <li>
+                        <span class="date">May 20</span>
+                        <span class="event">HTML Assignment Due</span>
+                    </li>
+                    <li>
+                        <span class="date">May 27</span>
+                        <span class="event">CSS Project Checkpoint</span>
+                    </li>
+                    <li>
+                        <span class="date">June 10</span>
+                        <span class="event">Module Quiz</span>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+    </main>
+
+    <!-- Footer section -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-links">
+                <ul>
+                    <li><a href="#">Help Center</a></li>
+                    <li><a href="#">Contact Support</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Use</a></li>
+                </ul>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Creative Computing Web Development Planner</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
