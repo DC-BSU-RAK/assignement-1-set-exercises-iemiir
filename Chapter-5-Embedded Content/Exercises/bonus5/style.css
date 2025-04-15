@@ -1,0 +1,119 @@
+/* Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1a3c4d;
+    background-image: linear-gradient(45deg, #1a3c4d 0%, #2a5769 100%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" preserveAspectRatio="none"><path d="M0,0 Q250,100 500,0 T1000,0 V1000 Q750,900 500,1000 T0,1000 Z" fill="%2300ccff22"/><path d="M0,0 Q150,200 300,100 T600,300 T900,100 T1000,0 V1000 Q850,800 700,900 T400,700 T100,900 T0,1000 Z" fill="%23ff334422"/><path d="M0,0 Q350,250 700,100 T1000,0 V1000 Q650,750 300,900 T0,1000 Z" fill="%23ffcc0022"/></svg>');
+    opacity: 0.8;
+    z-index: -1;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 15px 0;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #e73c64;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Grid Layout */
+.sampler-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+/* Sample Buttons */
+.sample-button {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 150px;
+}
+
+.sample-button:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    background-color: #333;
+    color: #fff;
+}
+
+.highlighted {
+    background-color: #e73c64;
+    color: #fff;
+}
+
+.highlighted:hover {
+    background-color: #c62b52;
+}
+
+.sample-number {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.sample-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.sample-duration {
+    font-size: 1.2rem;
+    color: #666;
+}
+
+.sample-button:hover .sample-duration {
+    color: #ccc;
+}
+
+.highlighted .sample-duration {
+    color: rgba(255, 255, 255, 0.8);
+}

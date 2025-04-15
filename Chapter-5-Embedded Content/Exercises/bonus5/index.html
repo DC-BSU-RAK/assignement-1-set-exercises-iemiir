@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alan Partridge Audio Sampler</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Audio Sampler</h1>
+        </header>
+        
+        <div class="sampler-grid">
+            <!-- Row 1 -->
+            <div class="sample-button" data-audio="ah-ha.mp3">
+                <div class="sample-number">10.</div>
+                <div class="sample-name">Ah-Ha</div>
+                <div class="sample-duration">1.4</div>
+            </div>
+            
+            <div class="sample-button highlighted" data-audio="dan.mp3">
+                <div class="sample-number">11.</div>
+                <div class="sample-name">Dan</div>
+                <div class="sample-duration">0.5</div>
+            </div>
+            
+            <div class="sample-button" data-audio="back-of-the-net.mp3">
+                <div class="sample-number">12.</div>
+                <div class="sample-name">Back of the net</div>
+                <div class="sample-duration">1.02</div>
+            </div>
+            
+            <!-- Row 2 -->
+            <div class="sample-button" data-audio="bangoutoforder.mp3">
+                <div class="sample-number">13.</div>
+                <div class="sample-name">Bang out of order</div>
+                <div class="sample-duration">1.38</div>
+            </div>
+            
+            <div class="sample-button" data-audio="jurassicpark.mp3">
+                <div class="sample-number">14.</div>
+                <div class="sample-name">Jurassic Park</div>
+                <div class="sample-duration">1.49</div>
+            </div>
+            
+            <div class="sample-button" data-audio="smellmycheese.mp3">
+                <div class="sample-number">15.</div>
+                <div class="sample-name">Smell my cheese</div>
+                <div class="sample-duration">1.91</div>
+            </div>
+            
+            <!-- Row 3 -->
+            <div class="sample-button" data-audio="goal.mp3">
+                <div class="sample-number">16.</div>
+                <div class="sample-name">Goal</div>
+                <div class="sample-duration">1.49</div>
+            </div>
+            
+            <div class="sample-button" data-audio="kissmyface.mp3">
+                <div class="sample-number">17.</div>
+                <div class="sample-name">Kiss my face</div>
+                <div class="sample-duration">1.07</div>
+            </div>
+            
+            <div class="sample-button" data-audio="hellopartridge.mp3">
+                <div class="sample-number">18.</div>
+                <div class="sample-name">Hello Partridge</div>
+                <div class="sample-duration">2.25</div>
+            </div>
+        </div>
+    </div>
+
+    <audio id="audio-player"></audio>
+    <script src="index.js"></script>
+</body>
+</html>
